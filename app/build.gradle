@@ -15,6 +15,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    /* For not using find view id */
+
+    buildFeatures{
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
