@@ -12,7 +12,9 @@ import com.example.android.myapplication.databinding.ActivityOrderBinding;
 import java.util.ArrayList;
 
 public class OrderActivity extends AppCompatActivity {
+
 ActivityOrderBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ ActivityOrderBinding binding;
         ArrayList<OrdersModel> list =  new ArrayList<>();
         OrdersModel ordersModel = new OrdersModel(R.drawable.as,"Hosuer re" , "28" , "REw123");
         list.add(ordersModel);
+
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
