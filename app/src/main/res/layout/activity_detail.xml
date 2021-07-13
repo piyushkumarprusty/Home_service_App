@@ -95,7 +95,7 @@
             android:text="@string/description" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/nameBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -106,7 +106,7 @@
             android:padding="9dp" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/phoneBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_back"
@@ -114,6 +114,49 @@
             android:hint="Phone"
             android:inputType="phone"
             android:padding="9dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/red"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Order Now"
+
+            android:background="@drawable/btn_back"/>
+
     </LinearLayout>
 
 </LinearLayout>
