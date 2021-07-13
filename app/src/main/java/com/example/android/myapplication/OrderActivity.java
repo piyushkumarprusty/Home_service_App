@@ -1,9 +1,11 @@
 package com.example.android.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 
+import com.example.android.myapplication.Adapters.OrdersAdapter;
 import com.example.android.myapplication.Models.OrdersModel;
 import com.example.android.myapplication.databinding.ActivityOrderBinding;
 
@@ -30,5 +32,11 @@ ActivityOrderBinding binding;
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
         list.add(new OrdersModel(R.drawable.car2,"car repair" , "20" ,"ASDF123" ));
+
+        OrdersAdapter  adapter = new OrdersAdapter(list , this);
+        binding.orderRecyclerView.setAdapter(adapter);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        binding.orderRecyclerView.setLayoutManager(layoutManager);
     }
 }
