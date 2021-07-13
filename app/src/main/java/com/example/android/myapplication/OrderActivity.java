@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class OrderActivity extends AppCompatActivity {
+import com.example.android.myapplication.databinding.ActivityOrderBinding;
 
+public class OrderActivity extends AppCompatActivity {
+ActivityOrderBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order);
+        binding = ActivityOrderBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }
