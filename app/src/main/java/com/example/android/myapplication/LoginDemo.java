@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginDemo extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class LoginDemo extends AppCompatActivity {
         EditText username = findViewById(R.id.userName);
         Log.i("USernamse" , username.getText().toString());
         Log.i("Passowrd" , userEditText.getText().toString());
+        Toast.makeText(this, "Hello" + username.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
