@@ -41,6 +41,7 @@
         android:layout_width="50dp"
         android:layout_height="110dp"
         android:layout_marginTop="64dp"
+        android:background="#3F51B5"
         android:onClick="login"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +53,11 @@
         android:id="@+id/button2"
         android:layout_width="50dp"
         android:layout_height="110dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="172dp"
+        android:background="#89DF24"
         android:text="Button"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
@@ -63,15 +65,21 @@
         android:id="@+id/button3"
         android:layout_width="50dp"
         android:layout_height="110dp"
+        android:layout_marginEnd="100dp"
+        android:background="#B63636"
         android:text="Button"
-        tools:layout_editor_absoluteX="201dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="150dp"
         android:layout_height="60dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btn_back"
         android:text="Button"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
