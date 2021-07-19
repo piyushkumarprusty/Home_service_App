@@ -45,3 +45,19 @@ ActivityMainBinding binding;
 
     }
 }
+
+
+
+/*
+
+          Log.i("Info" , "Button Pressed");
+        EditText userEditText = findViewById(R.id.editTextTextPassword);
+        EditText username = findViewById(R.id.userName);
+        // when button is tapped //
+        Log.i("Username" , username.getText().toString());
+        Log.i("Password" , userEditText.getText().toString());
+        Toast.makeText(this, "Hello" + username.getText().toString(), Toast.LENGTH_SHORT).show();
+
+
+
+        */
