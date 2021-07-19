@@ -24,8 +24,9 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         app:lottie_autoPlay="true"
+        android:elevation="3dp"
         android:id="@+id/lottie"
-        app:lottie_rawRes=""
+        app:lottie_rawRes="@raw/web"
         />
 
 </RelativeLayout>
