@@ -19,12 +19,16 @@ LottieAnimationView lottie;
 
         appname = findViewById(R.id.appname);
         lottie = findViewById(R.id.lottie);
+
+        appname.animate().translationY(-1400).setDuration(2500).setStartDelay(0);
+        lottie.animate().translationY(-1400).setDuration(2500).setStartDelay(0);
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
-        })
+        },3000);
     }
 }
