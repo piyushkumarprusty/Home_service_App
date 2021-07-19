@@ -16,7 +16,7 @@
         android:layout_margin="20dp"
         android:text="Home service"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"  />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="400dp"
