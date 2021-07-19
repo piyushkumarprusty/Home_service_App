@@ -8,10 +8,13 @@
     tools:context=".SplashScreen">
 
     <TextView
-        android:layout_width="wrap_content"
         android:id="@+id/appname"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-android:text="Home service"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Home service"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
 </RelativeLayout>
