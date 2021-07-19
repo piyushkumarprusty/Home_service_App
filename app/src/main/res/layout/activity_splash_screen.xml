@@ -17,4 +17,15 @@
         android:text="Home service"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:id="@+id/lottie"
+        app:lottie_rawRes=""
+        />
+
 </RelativeLayout>
