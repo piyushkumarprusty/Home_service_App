@@ -11,7 +11,7 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class SplashScreen extends AppCompatActivity {
     TextView appname;
-    LottieAnimationView lottie;
+    LottieAnimationView lottie ,lottiee;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,11 @@ public class SplashScreen extends AppCompatActivity {
 
         appname = findViewById(R.id.appname);
         lottie = findViewById(R.id.lottie);
+        lottiee = findViewById(R.id.lottiee);
 
         appname.animate().translationY(-500).setDuration(2500).setStartDelay(0);
         lottie.animate().translationX(2000).setDuration(5200).setStartDelay(2000);
+        lottiee.animate().translationX(2000).setDuration(5200).setStartDelay(2000);
 
         new Handler().postDelayed(new Runnable() {
             @Override
