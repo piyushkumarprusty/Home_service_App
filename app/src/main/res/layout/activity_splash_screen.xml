@@ -16,17 +16,28 @@
         android:layout_margin="20dp"
         android:text="Home service"
         android:textSize="24sp"
-        android:textStyle="bold"  />
+        android:textStyle="bold" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:id="@+id/lottiee"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@id/lottie"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="48dp"
+        android:elevation="3dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/wetruck" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
-        app:lottie_autoPlay="true"
         android:elevation="3dp"
-        android:id="@+id/lottie"
-        app:lottie_rawRes="@raw/web"
-        />
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/web" />
 
 </RelativeLayout>
