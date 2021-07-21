@@ -44,6 +44,15 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder> {
         holder.price.setText(model.getPrice());
         holder.description.setText(model.getDescription());
 
+    }  @Override
+    public void onBindViewHolder(@NonNull MainAdapter.viewHolder holder, int position) {
+
+        final MainModel model = list.get(position);
+        holder.foodimage.setImageResource(model.getImage());
+        holder.mainName.setText(model.getName());
+        holder.price.setText(model.getPrice());
+        holder.description.setText(model.getDescription());
+
     }
 
     @Override
